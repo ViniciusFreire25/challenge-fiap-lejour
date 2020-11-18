@@ -1,9 +1,8 @@
-import React, {Component, Fragment} from 'react';
+import React, { Component } from 'react';
 import {Bar} from 'react-chartjs-2';
 import api from '../../services/api';
 import moment from 'moment';
-import { Container } from './styles';
-import Axios from "axios";
+/*import { Container } from './styles';*/
 
 export default class ChartAgendamentoMes extends Component {
     constructor(props){
@@ -43,7 +42,8 @@ export default class ChartAgendamentoMes extends Component {
                 if ((moment(ag.BEGINS_AT).isSame(`${ano}-${mes}`, 'month')) && (ag.STATUS == status)
                     && (ag.VENDOR_CATEGORY == categoria)) {
                       ++results[mes - 1];
-                }           
+                }
+                return 0;           
               })
             }
         } else if (status == "todos" && categoria != "todos") {
@@ -51,7 +51,8 @@ export default class ChartAgendamentoMes extends Component {
               agendamento.map(ag => {     
                 if ((moment(ag.BEGINS_AT).isSame(`${ano}-${mes}`, 'month')) && (ag.VENDOR_CATEGORY == categoria)) {
                       ++results[mes - 1];
-                }           
+                } 
+                return 0;          
               })
             } 
         } else if ( status != "todos" && categoria == "todos" ) {
@@ -59,7 +60,8 @@ export default class ChartAgendamentoMes extends Component {
               agendamento.map(ag => {     
                 if ((moment(ag.BEGINS_AT).isSame(`${ano}-${mes}`, 'month')) && (ag.STATUS == status)) {
                       ++results[mes - 1];
-                }           
+                }
+                return 0;         
               })
             } 
         } else {
@@ -67,7 +69,8 @@ export default class ChartAgendamentoMes extends Component {
               agendamento.map(ag => {     
                 if ((moment(ag.BEGINS_AT).isSame(`${ano}-${mes}`, 'month'))) {
                       ++results[mes - 1];
-                }           
+                }
+                return 0;          
               })
             } 
         }

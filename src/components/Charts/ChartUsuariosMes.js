@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {HorizontalBar} from 'react-chartjs-2';
 import api from '../../services/api';
 import moment from 'moment';
-import { Container } from './styles';
+/*import { Container } from './styles';*/
 
 export default class ChartUsuariosMes extends Component {
     constructor(props){
@@ -20,7 +20,7 @@ export default class ChartUsuariosMes extends Component {
         let total = 0;
         let mensais = [];
         for (let mes = 1; mes <= 12; mes++) {
-                users.map(user => {
+            users.map(user => {
                 if (moment(user.CREATED_AT).isSame(`${2020}-${mes}`, 'month')){
                     total++;
                 }

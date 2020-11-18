@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Bar } from 'react-chartjs-2';
 import api from '../../services/api';
 import moment from 'moment';
-import { Container } from './styles';
+/*import { Container } from './styles';*/
 
 export default class ChartVendasMes extends Component {
     constructor(props){
@@ -40,7 +40,8 @@ export default class ChartVendasMes extends Component {
               vendas.map(vd => {     
                 if ((moment(vd.CREATED_AT).isSame(`${ano}-${mes}`, 'month')) && (vd.VENDOR_CATEGORY == categoria)) { 
                       results[mes - 1] += parseFloat(vd.AMOUNT.toFixed(2)) - parseFloat(vd.VENDOR_AMOUNT.toFixed(2));
-                }           
+                }
+                return 0;           
               })
             }
         } else {
@@ -48,7 +49,8 @@ export default class ChartVendasMes extends Component {
               vendas.map(vd => {     
                 if ((moment(vd.CREATED_AT).isSame(`${ano}-${mes}`, 'month'))) {
                       results[mes - 1] += parseFloat(vd.AMOUNT.toFixed(2)) - parseFloat(vd.VENDOR_AMOUNT.toFixed(2));
-                }           
+                } 
+                return 0;          
               })
             } 
         }

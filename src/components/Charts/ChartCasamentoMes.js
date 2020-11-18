@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Doughnut} from 'react-chartjs-2';
 import api from '../../services/api';
 import moment from 'moment';
-import { Container } from './styles';
+/*import { Container } from './styles';*/
 
 export default class ChartCasamentoMes extends Component {
     constructor(props){
@@ -33,6 +33,7 @@ export default class ChartCasamentoMes extends Component {
                     ++estilo[2];
                 }
           }
+          return 0;  
         })
         this.setState({
             chartData: {

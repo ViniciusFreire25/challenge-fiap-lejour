@@ -26,13 +26,10 @@ function Main() {
                   <h1>Dashboard Geral</h1>
                 </div>
               </Col>
-              <Col md="4">
+              <Col md="6">
                   <ChartUsuariosMes />
               </Col>
-              <Col md="4">
-                  {/* <ChartVendasMes /> */}
-              </Col>
-              <Col md="4">
+              <Col md="6">
                   <ChartCasamentoMes />
               </Col>
               <Col md="12">
@@ -42,6 +39,7 @@ function Main() {
           </Col>
         </Row>
       </Container>
+      <br></br><br></br><br></br><br></br><br></br><br></br>
     </>
   )
 }

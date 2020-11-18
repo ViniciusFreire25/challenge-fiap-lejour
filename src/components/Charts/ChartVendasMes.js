@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Bar } from 'react-chartjs-2';
 import api from '../../services/api';
 import moment from 'moment';
-/*import { Container } from './styles';*/
+import { Container } from './styles';
 
 export default class ChartVendasMes extends Component {
     constructor(props){
@@ -84,7 +84,7 @@ export default class ChartVendasMes extends Component {
 
     render(){
         return (
-            <div>
+            <Container>
                 <input type="number" placeholder="Ex: 2020" onChange={this.handleAno} />
                 <select id="categoria" onChange={this.handleCategoria}>
                   <option value="" selected>Escolha...</option>
@@ -108,7 +108,7 @@ export default class ChartVendasMes extends Component {
                   data={this.state.chartData}
                   options={{ maintainAspectRatio: false }}
                 />
-            </div>
+            </Container>
         ); 
     }
 }

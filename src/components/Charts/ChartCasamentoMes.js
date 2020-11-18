@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Doughnut} from 'react-chartjs-2';
 import api from '../../services/api';
 import moment from 'moment';
-/*import { Container } from './styles';*/
+import { Container } from './styles';
 
 export default class ChartCasamentoMes extends Component {
     constructor(props){
@@ -55,10 +55,12 @@ export default class ChartCasamentoMes extends Component {
 
     render(){
         return (
-            <div>
+            <Container>
                 <input type="month" placeholder="Ex: 2020-08" onChange={this.handleMes} />
                 <Doughnut
                   data={this.state.chartData}
+                  width={400}
+                  height={320}
                   options={{
                       title: {
                           display: true,
@@ -72,7 +74,7 @@ export default class ChartCasamentoMes extends Component {
                       }
                   }}
                 />
-            </div>
+            </Container>
         ); 
     }
 }

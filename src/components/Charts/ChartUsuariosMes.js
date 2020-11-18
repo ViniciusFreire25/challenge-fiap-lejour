@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {HorizontalBar} from 'react-chartjs-2';
 import api from '../../services/api';
 import moment from 'moment';
-/*import { Container } from './styles';*/
+import { Container } from './styles';
 
 export default class ChartUsuariosMes extends Component {
     constructor(props){
@@ -49,11 +49,13 @@ export default class ChartUsuariosMes extends Component {
 
     render(){
         return (
-            <div className="charts-size">
+            <Container>
 
                 <HorizontalBar
 
                   data={this.state.chartData}
+                  width={400}
+                  height={320}
                   options={{
 
 
@@ -69,7 +71,7 @@ export default class ChartUsuariosMes extends Component {
                       }
                   }}
                 />
-            </div>
+            </Container>
         ); 
     }
 }

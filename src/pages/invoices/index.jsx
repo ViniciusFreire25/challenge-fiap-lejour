@@ -5,15 +5,12 @@ import {
   Col
 } from 'reactstrap'
 
-import Header from '../../components/Header'
 import Navbar from '../../components/Navbar'
 import CardChart from '../../components/CardChart'
-import Footer from '../../components/Footer'
 
 function Invoices() {
   return (
     <>
-      <Header />
       <Container>
         <Row>
           <Col md="3">
@@ -42,7 +39,6 @@ function Invoices() {
           </Col>
         </Row>
       </Container>
-      <Footer />
     </>
   )
 }

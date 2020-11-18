@@ -49,7 +49,7 @@ export default class ChartUsuariosMes extends Component {
 
     render(){
         return (
-            <div>
+            <div className="charts-size">
 
                 <HorizontalBar
 
@@ -61,12 +61,11 @@ export default class ChartUsuariosMes extends Component {
                       title: {
                           display: true,
                           text: 'Usuários',
-                          fontSize: 25
+                          fontSize: 20
                       },
                       legend:{
                           display: true,
                           position:'top'
-
                       }
                   }}
                 />

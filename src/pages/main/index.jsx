@@ -5,10 +5,7 @@ import {
   Col
 } from 'reactstrap'
 
-import Header from '../../components/Header'
 import Navbar from '../../components/Navbar'
-import CardChart from '../../components/CardChart'
-import Footer from '../../components/Footer'
 import ChartUsuariosMes from '../../components/Charts/ChartUsuariosMes';
 import ChartVendasMes from '../../components/Charts/ChartVendasMes';
 import ChartCasamentoMes from '../../components/Charts/ChartCasamentoMes';
@@ -17,7 +14,6 @@ import ChartAgendamentoMes from '../../components/Charts/ChartAgendamentoMes';
 function Main() {
   return (
     <>
-      <Header />
       <Container>
         <Row>
           <Col md="3">
@@ -34,7 +30,7 @@ function Main() {
                   <ChartUsuariosMes />
               </Col>
               <Col md="4">
-                  <ChartVendasMes />
+                  {/* <ChartVendasMes /> */}
               </Col>
               <Col md="4">
                   <ChartCasamentoMes />
@@ -46,7 +42,6 @@ function Main() {
           </Col>
         </Row>
       </Container>
-      <Footer />
     </>
   )
 }

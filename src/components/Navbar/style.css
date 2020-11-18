@@ -1,3 +1,22 @@
 .iconMenu {
   max-width: 40px;
 }
+
+nav li {
+  padding: 20px;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+nav li a{
+  color: #555555;
+}
+
+nav li a:hover{
+  color: #8ebde4;
+  text-decoration: none;
+}
+
+nav li a img{
+  margin-right: 10px;
+}

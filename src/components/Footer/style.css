@@ -1,6 +1,9 @@
 footer {
+  width: 100vw;
   padding: 20px;
   background: #E2645A;
-  display: flex;
-  justify-content: center;
+  display: flex !important;
+  justify-content: center !important;
+  position: fixed;
+  bottom: 0;
 }

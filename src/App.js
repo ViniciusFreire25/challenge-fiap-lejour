@@ -1,12 +1,17 @@
 import React from 'react';
 
-import Main from './pages/main'
+import Header from './components/Header';
+import Routes from './routers';
+import Footer from './components/Footer';
+
 import './styles/global.css';
 
 function App() {
   return (
     <>
-      <Main />
+      <Header />
+      <Routes />
+      <Footer />
     </>
   );
 }

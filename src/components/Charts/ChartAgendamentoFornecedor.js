@@ -14,12 +14,12 @@ export default class ChartAgendamentoFornecedor extends Component {
             chartData: {
                 labels: m,
                 datasets: [{
-                              label: "Agendamentos",
+                              label: "Por Fornecedor",
                               data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-                              backgroundColor: ['rgb(255, 99, 132)', 'rgb(50, 10, 100)', 'rgb(10, 100, 100)',
-                                                'rgb(10, 100, 170)', 'rgb(120, 25, 170)', 'rgb(180, 120, 10)',
-                                                'rgb(1, 120, 10)', 'rgb(255, 99, 132)', 'rgb(50, 10, 100)',
-                                                'rgb(10, 100, 100)', 'rgb(10, 100, 2)', 'rgb(120, 25, 170)']
+                              backgroundColor: ['rgb(3,106,177)', 'rgb(3,106,177)', 'rgb(3,106,177)',
+                                  'rgb(3,106,177)', 'rgb(3,106,177)','rgb(3,106,177)',
+                                  'rgb(3,106,177)','rgb(3,106,177)','rgb(3,106,177)',
+                                  'rgb(3,106,177)', 'rgb(3,106,177)', 'rgb(3,106,177)']
                           }]
             },
             status: '',
@@ -61,12 +61,12 @@ export default class ChartAgendamentoFornecedor extends Component {
             chartData: {
                          labels: meses,
                          datasets: [{
-                                      label: `Agendamentos por Fornecedor`,
+                                      label: `Por Fornecedor`,
                                       data: results,
-                                      backgroundColor: ['rgb(231,46,86)', 'rgb(231,46,86)', 'rgb(231,46,86)',
-                                                        'rgb(231,46,86)', 'rgb(231,46,86)', 'rgb(231,46,86)',
-                                                        'rgb(231,46,86)', 'rgb(231,46,86)', 'rgb(231,46,86)',
-                                                        'rgb(231,46,86)', 'rgb(231,46,86)', 'rgb(231,46,86)'
+                                      backgroundColor: ['rgb(3,106,177)', 'rgb(3,106,177)', 'rgb(3,106,177)',
+                                                        'rgb(3,106,177)', 'rgb(3,106,177)', 'rgb(3,106,177)',
+                                                        'rgb(3,106,177)', 'rgb(3,106,177)', 'rgb(3,106,177)',
+                                                        'rgb(3,106,177)','rgb(3,106,177)', 'rgb(3,106,177)'
 
                                       ],
                                    }]
@@ -113,7 +113,7 @@ export default class ChartAgendamentoFornecedor extends Component {
 
                       title: {
                           display: true,
-                          text: 'Agendamentos',
+                          text: 'Total de Agendamentos',
                           fontSize: 25
                       },
                       legend:{

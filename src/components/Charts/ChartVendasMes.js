@@ -14,7 +14,7 @@ export default class ChartVendasMes extends Component {
             chartData: {
                 labels: m,
                 datasets: [{
-                              label: "Vendas",
+                              label: "Por Fornecedor",
                               data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
                               backgroundColor: ['rgb(255, 99, 132)', 'rgb(50, 10, 100)', 'rgb(10, 100, 100)',
                                                 'rgb(10, 100, 170)', 'rgb(120, 25, 170)', 'rgb(180, 120, 10)',
@@ -61,10 +61,10 @@ export default class ChartVendasMes extends Component {
                          datasets: [{
                                       label: `Vendas`,
                                       data: results,
-                                      backgroundColor: ['rgb(255, 99, 132)', 'rgb(50, 10, 100)', 'rgb(10, 100, 100)',
-                                                        'rgb(10, 100, 170)', 'rgb(120, 25, 170)', 'rgb(180, 120, 10)',
-                                                        'rgb(1, 120, 10)', 'rgb(255, 99, 132)', 'rgb(50, 10, 100)',
-                                                        'rgb(10, 100, 100)', 'rgb(10, 100, 2)', 'rgb(120, 25, 170)']
+                                      backgroundColor: ['rgb(207,154,58)','rgb(207,154,58)', 'rgb(207,154,58)',
+                                          'rgb(207,154,58)','rgb(207,154,58)', 'rgb(207,154,58)',
+                                          'rgb(207,154,58)', 'rgb(207,154,58)', 'rgb(207,154,58)',
+                                          'rgb(207,154,58)', 'rgb(207,154,58)', 'rgb(207,154,58)' ]
                                    }]
                         }
         })

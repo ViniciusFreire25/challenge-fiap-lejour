@@ -9,6 +9,10 @@ import Header from '../../components/Header'
 import Navbar from '../../components/Navbar'
 import CardChart from '../../components/CardChart'
 import Footer from '../../components/Footer'
+import ChartUsuariosMes from '../../components/Charts/ChartUsuariosMes';
+import ChartVendasMes from '../../components/Charts/ChartVendasMes';
+import ChartCasamentoMes from '../../components/Charts/ChartCasamentoMes';
+import ChartAgendamentoMes from '../../components/Charts/ChartAgendamentoMes';
 
 function Main() {
   return (
@@ -27,16 +31,16 @@ function Main() {
                 </div>
               </Col>
               <Col md="4">
-                <CardChart />
+                  <ChartUsuariosMes />
               </Col>
               <Col md="4">
-                <CardChart />
+                  <ChartVendasMes />
               </Col>
               <Col md="4">
-                <CardChart />
+                  <ChartCasamentoMes />
               </Col>
               <Col md="12">
-                <CardChart />
+                  <ChartAgendamentoMes />
               </Col>
             </Row>
           </Col>

@@ -8,6 +8,7 @@ import {
 import Header from '../../components/Header'
 import Navbar from '../../components/Navbar'
 import CardChart from '../../components/CardChart'
+import Footer from '../../components/Footer'
 
 function Invoices() {
   return (
@@ -41,6 +42,7 @@ function Invoices() {
           </Col>
         </Row>
       </Container>
+      <Footer />
     </>
   )
 }

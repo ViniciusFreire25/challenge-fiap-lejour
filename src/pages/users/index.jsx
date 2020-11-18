@@ -8,7 +8,7 @@ import {
 import Header from '../../components/Header'
 import Navbar from '../../components/Navbar'
 import CardChart from '../../components/CardChart'
-import './style.css'
+import Footer from '../../components/Footer'
 
 function Users() {
   return (
@@ -42,6 +42,7 @@ function Users() {
           </Col>
         </Row>
       </Container>
+      <Footer />
     </>
   )
 }

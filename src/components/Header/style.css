@@ -1,0 +1,22 @@
+header {
+  margin-bottom: 30px;
+}
+.header {
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  padding: 10px;
+  color: #E2645A;
+  background-color: #fff;
+  text-align: center;
+  border: none;
+}
+
+.header a .signout {
+  max-width: 35px
+}

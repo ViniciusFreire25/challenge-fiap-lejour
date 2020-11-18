@@ -105,8 +105,22 @@ export default class ChartVendasMes extends Component {
                   <option value="aluguel-de-carro">Aluguel de carro</option>
                 </select>
                 <Bar
-                  data={this.state.chartData}
-                  options={{ maintainAspectRatio: false }}
+                   data={this.state.chartData}
+                   width={400}
+                   height={280}
+                   options={{
+ 
+                       title: {
+                           display: true,
+                           text: 'Comissão',
+                           fontSize: 25
+                       },
+                       legend:{
+                           display: true,
+                           position:'top',
+ 
+                       }
+                   }}
                 />
             </Container>
         ); 

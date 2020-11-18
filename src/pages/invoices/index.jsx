@@ -6,6 +6,7 @@ import {
 } from 'reactstrap'
 
 import Navbar from '../../components/Navbar'
+import ChartVendasMes from '../../components/Charts/ChartVendasMes';
 import CardChart from '../../components/CardChart'
 
 function Invoices() {
@@ -23,22 +24,20 @@ function Invoices() {
                   <h1>Dashboard Geral</h1>
                 </div>
               </Col>
-              <Col md="4">
-                <CardChart />
+              <Col md="8">
+                <ChartVendasMes />
               </Col>
-              <Col md="4">
-                <CardChart />
-              </Col>
-              <Col md="4">
-                <CardChart />
+              <Col md="8">
+                
               </Col>
               <Col md="12">
-                <CardChart />
+                
               </Col>
             </Row>
           </Col>
         </Row>
       </Container>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
     </>
   )
 }

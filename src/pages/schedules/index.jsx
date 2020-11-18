@@ -7,6 +7,7 @@ import {
 
 import Navbar from '../../components/Navbar'
 import CardChart from '../../components/CardChart'
+import ChartAgendamentoFornecedor from '../../components/Charts/ChartAgendamentoFornecedor';
 
 function Schedules() {
   return (
@@ -23,22 +24,20 @@ function Schedules() {
                   <h1>Dashboard Geral</h1>
                 </div>
               </Col>
-              <Col md="4">
-                <CardChart />
+              <Col md="6">
+                <ChartAgendamentoFornecedor />
               </Col>
-              <Col md="4">
-                <CardChart />
-              </Col>
-              <Col md="4">
-                <CardChart />
+              <Col md="6">
+       
               </Col>
               <Col md="12">
-                <CardChart />
+  
               </Col>
             </Row>
           </Col>
         </Row>
       </Container>
+      <br></br><br></br><br></br><br></br><br></br><br></br>
     </>
   )
 }

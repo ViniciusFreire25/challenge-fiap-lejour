@@ -7,7 +7,6 @@ import {
 
 import Navbar from '../../components/Navbar'
 import ChartUsuariosMes from '../../components/Charts/ChartUsuariosMes';
-import ChartVendasMes from '../../components/Charts/ChartVendasMes';
 import ChartCasamentoMes from '../../components/Charts/ChartCasamentoMes';
 import ChartAgendamentoMes from '../../components/Charts/ChartAgendamentoMes';
 
